@@ -3,6 +3,8 @@
   "outputDirectory": "dist",
   "routes": [
     { "handle": "filesystem" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/(.*)\\.js$", "dest": "/$1.js" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
