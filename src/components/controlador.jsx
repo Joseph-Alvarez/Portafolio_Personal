@@ -33,7 +33,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Asegúrate de incluir Boo
     });
 
     // Cerrar el 'offcanvas' cuando se haga clic en un elemento de navegación
-    try {
+    /*try {
       const offcanvas = document.getElementById('navbarNav');
       if (offcanvas) {
         const elementosNavegacion = offcanvas.querySelectorAll('.nav-item');
@@ -50,7 +50,4 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Asegúrate de incluir Boo
       console.error("Error with navbarNav elements:", error);
     }
 
-    // Initialize the default view
-    window.cambiarVentana(window.HOME);
-
-export default Controlador;
+export default Controlador;*/
