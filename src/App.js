@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from './components/layout';
-import Controlador from './components/controlador';
+import Layout from '../src/components/layout';
+import Controlador from '../src/components/controlador';
 
 function App() {
   return (
