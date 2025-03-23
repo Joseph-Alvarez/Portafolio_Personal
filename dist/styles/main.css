@@ -1,0 +1,646 @@
+
+/*CONTENIDO-1*/
+
+#contenido-1{
+  width: 300px;
+  height: 160%;
+ background-color: transparent;
+  margin-top: 10px;
+  padding: 50px;
+  top: -570px;
+ position: relative;
+  flex-direction: column;
+  left: 10%;
+}
+/*#contenido-1{
+  width: 300px;
+  height: 230px;
+ background-color: transparent;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 50px;
+  top: -570px;
+ position: relative;
+  flex-direction: column;
+  left: 10%;
+}
+
+#contenido-1 {
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}*/
+
+
+.container-fluid {
+  width: 100%;
+  position: relative;
+  top: 0px;
+  align-items: center;
+  left: 170px;
+}
+
+.porta{
+  width: 400px;
+  height: 330px;
+  position: relative;
+  border-radius: 200px;
+  top: -130px;
+  left: 60px;
+}
+
+
+.porta2{
+  width: 350px;
+  position: relative;
+  border-radius: 200px;
+  top: -150px;
+  left: 650px;
+}
+
+.card {
+  height: 300px;
+}
+
+
+#typed-text {
+  width: 500px;
+  color: #171212;
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+  top: -10px;
+  left: -130px;
+}
+
+h2{
+  font-size: 300px;
+  color: #fff;
+}
+
+#primer-contenido {
+  position: relative;
+  background-color: transparent;
+  width: 600px;
+  height: 300px;
+  top: -500px;
+  left: -100px;
+}
+
+@media (max-width: 767px) {
+  #contenido-1 {
+    position: relative;
+    width: 350px;
+    height: 150px; /* Ajusta la altura automáticamente */
+    background-color: transparent;
+    margin: 10px auto; /* Centra el contenido */
+    border-radius: 10px;
+    padding: 50px;
+    left: -80px;
+    top: -880px;
+  }
+
+  
+  
+  h2, h3 {
+    color: #fff;
+  }
+  #primer-contenido {
+    position: relative;
+    background-color: transparent;
+    width: 380px;
+    height: 400px;
+    top: 300px;
+    left: 20px;
+    display: block;
+   
+  }
+  .porta{
+    position: relative;
+    width: 380px;
+    top: 260px;
+    left: 10px;
+   padding: 20px;
+  }
+}
+
+#animation {
+  position: relative;
+  width: 500px;
+  left: 500px;
+  top: -480px;
+  /*top: -1000px;*/
+}
+
+@media (max-width: 767px) {
+  #animation {
+    position: relative;
+    width: 400px;
+    top: 60px;
+    left: 90%;
+    transform: translateX(-50%);
+  }
+}
+
+h4 {
+  color: #ffffff;
+}
+
+#perfil {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  margin-top: 30px;
+  margin-left: 50px;
+  top: 80px;
+  border-radius: 50%; /* Cambié de 80% a 50% para hacer un círculo perfecto */
+  left: -150px;
+  object-fit: cover; /* Esto asegura que la imagen se adapte bien al contenedor */
+}
+
+@media (max-width: 767px) {
+  .perfil {
+    top: 80px;
+    width: 160px;
+    height: 160px;
+    left: 250px;
+  }
+}
+
+p {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  top: -10px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  p{
+    color: #000;
+    font-size: 30px;
+  }
+  
+}
+/*FIN CONTENIDO-1*/
+
+
+
+.nav-item{
+  width: 200px;
+  position: relative;
+  font-size: 25px;
+  left: -80px;
+  border-radius: white;
+  row-gap: 20px;
+}
+
+
+/*p:hover {
+  background-color: rgb(74, 201, 95);
+  border-radius: 50px;
+}*/
+
+.navbar-nav {
+  position: relative;
+  width: 90%;
+  height: 60px;
+  left: 170px;
+  top: 30px;
+}
+@media (max-width: 767px) {
+  .navbar-nav {
+   position: relative;
+   left: 10px;
+   height: 400px;
+  }
+  .nav-item{
+    padding: 45px;
+    height: 150px;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 10px; /* Ajusta la posición vertical según tus necesidades */
+  left: 10px; /* Ajusta la posición horizontal según tus necesidades */
+  font-size: 35px;
+  color: #fff;
+  z-index: 999; /* Asegura que el icono del menú esté en la parte superior */
+}
+
+
+@media (max-width: 600px) {
+  .menu {
+    font-size: 40px;
+    position: relative;
+    top: 70%;
+    left: 330px;
+  }
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;  
+  top: 5%;           
+  width: 100%;      
+  z-index: 10;      
+}
+
+
+
+.navbar-brand {
+  flex-grow: 1;
+}
+
+
+.nav2 {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(231, 227, 227, 0.2);
+}
+
+
+.redes {
+  position: relative;
+  left: 2px;
+  padding: 4px;
+  cursor: pointer;
+  animation: slide-bottom 0.5s linear both;
+  font-size: 50px;
+  margin: 0 10px;
+  border-color: rgb(244, 218, 218);
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 767px) {
+  .redes {
+    font-size: 50px;
+    margin: 0 5px;
+    margin: 2px solid #fff;
+    border-color: #fff;
+  }
+  .nav2 {
+    position: fixed;
+    top: 840px;
+  }
+}
+
+.redes:hover {
+  transform: scale(2.0); /* Escala del 110% al pasar el cursor */
+}
+
+.fa-facebook,
+.fa-telegram,
+.fa-whatsapp,
+.fa-linkedin,
+.fa-instagram,
+.fa-twitter,
+.fa-github {
+  animation: scale-up-bottom 0.5s; /* Transición suave del efecto de escala */
+}
+
+
+
+@media (max-width: 400px) {
+  .offcanvas {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  top: 0px;
+}
+
+
+#contenido-2,
+#contenido-3,
+#contenido-4,
+#contenido-5 {
+  display: none;
+}
+
+#animation3 {
+  position: relative;
+  width: 450px;
+  left: -600px;
+  top: -1000px;
+}
+
+.contenedor-imagenes {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  left: 15%;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columnas con ancho igual */
+  gap: 10px; /* Espacio entre las imágenes */
+  background-color: transparent;
+  top: -500px;
+}
+
+.leng {
+  width: 100px;
+  height: 100px;
+}
+
+
+#contenido-2{
+  width: 200px;
+  height: 100px;
+ background-color: transparent;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 50px;
+  top: -200px;
+ position: relative;
+  flex-direction: column;
+  left: 50%;
+}
+
+@media (max-width: 767px) {
+  #contenido-2 {
+    position: relative;
+    top: -350px;
+    width: 100px;
+    height: 100px;
+    left: 20px;
+    padding: 10px;
+    transform: translateX(-50%);
+  }
+  .leng {
+    width: 80px;
+    height: 80px;
+  }
+  .contenedor-imagenes {
+    height: 250px;
+    padding: 5px;
+    gap: 5px;
+    display: grid;
+  }
+  #animation3 {
+    position: relative;
+    width: 400px;
+    top: -400px;
+    left: 50%;
+  }
+ 
+}
+
+#contenido-3{
+  position: relative;
+  width: 100%;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 80px 120px; 
+  justify-content: center;
+  background-color: transparent;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  top: -900px;
+}
+
+#contenido-4{
+  width: 100%;
+  height: 100%;
+ background-color: transparent;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 50px;
+  top: -690px;
+ position: relative;
+  flex-direction: column;
+}
+
+
+#contenido-5 {
+  position: relative;
+  width: 100%;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 80px 120px; 
+  justify-content: center;
+  background-color: transparent;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  top: -900px;
+}
+
+.row, .row2, .row3, .row4 {
+  position: relative;
+  left: 400px;
+  width: 100%;
+  max-width: 400px;
+  background-color: transparent;
+  border-radius: 1rem;
+  top: -350px;
+}
+
+.card2 {
+  width: 100%;
+  transition: transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.card2:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.web {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.row5, .row6, .row7, .row8 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 1rem;
+  border-color: rgb(236, 232, 232);
+  padding-bottom: 5%;
+}
+
+.row5 {
+  left: 500px;
+  top: -360px;
+}
+
+.row6 {
+  left: 500px;
+  top: -320px;
+}
+
+.row7 {
+  left: 840px;
+  top: -760px;
+}
+
+.row8 {
+  left: 840px;
+  top: -720px;
+}
+
+
+#animation4 {
+  position: relative;
+  width: 350px;
+  top: 150px;
+}
+
+#animation5{
+  position: relative;
+  width: 350px;
+  top: -60px;
+}
+
+#animation6{
+  position: relative;
+  width: 350px;
+  top: 150px;
+  left: 5px;
+}
+
+@media (max-width: 767px) {
+    #contenido-3 {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      top: -800px;
+    }
+    #contenido-4, #contenido-5{
+      position: relative;
+      width: 100%;
+      height: 100px;
+      top: -700px;
+    }
+
+  #animation4{
+    position: relative;
+    width: 380px;
+    top: 330px;
+    left: -10px;
+  }
+  #animation5{
+    position: relative;
+    width: 280px;
+    top: 250px;
+    left: 20px;
+  }
+  #animation6{
+    position: relative;
+    width: 300px;
+    top: 250px;
+    left: 20px;
+  }
+  .row {
+    left: -50px;
+    top: -400px;
+  }
+  
+  .row2 {
+    left: 150px;
+    top: -560px;
+  }
+  
+  .row3 {
+    left: -50px;
+    top: -560px;
+  }
+  
+  .row4 {
+    left: 200px;
+    top: -125px;
+  }
+
+  .row5 {
+    left: -20px;
+    top: -410px;
+  }
+  
+  .row6 {
+    left: -20px;
+    top: -380px;
+  }
+  
+  .row7 {
+    left: 180px;
+    top: -730px;
+  }
+  
+  .row8 {
+    left: 180px;
+    top: -700px;
+  }
+  
+  .row, .row2, .row3, .row4, .row5, .row6, .row7, .row8 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+    border-radius: 1rem;
+    border-color: rgb(236, 232, 232);
+    padding-bottom: 5%;
+  }
+  .card-title{
+    position: relative;
+    left: -15px;
+    color: #fff;
+  }
+  h4{
+    position: relative;
+    left: -10px;
+    color: #fff;
+  }
+}
+
+.web {
+  width: 280px;
+  transition: transform 0.3s;
+  position: relative;
+  
+}
+
+.web.active {
+  transform: scale(1.5) translate(-50%, -50%);
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  cursor: zoom-out;
+}
+
+/*.web.active {
+  transform: scale(1.5);
+  z-index: 2;
+}*/
+
+@media (max-width: 767px) {
+.web {
+  width: 180px;
+}
+}
+
