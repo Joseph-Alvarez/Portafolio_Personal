@@ -408,7 +408,7 @@ p {
   #perfil {
     top: 27vh;
     width: 28vh;
-    left: 10%;
+    left: 2%;
   }
 
   #animation, .porta2, .container-fluid, #primer-contenido, .porta, #animation3, #animation4, #animation5, #animation6 {
@@ -418,18 +418,19 @@ p {
   .nav2 {
     position: fixed;
     top: 2vh;
-    left: -5vh;
+    left: -1vh;
   }
 
 
   .redes {
     font-size: 3.5vh;
     border-color: #0a0808;
+    left: 1vh;
   }
   .menu {
     position: relative;
-    width: 35vh;
-    height: 34vh;
+    width: 25vh;
+    height: 30vh;
     left: 45%;
     top: -35vh;
   }

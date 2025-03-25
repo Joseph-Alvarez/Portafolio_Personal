@@ -65,7 +65,6 @@ strings: [
   startDelay: 500, // Retraso antes de empezar
   backDelay: 2000, // Tiempo antes de borrar el texto
   loop: true, // Hace que se repita infinitamente
-  showCursor: true, // Muestra el cursor de escritura
 });
 
 
