@@ -54,6 +54,20 @@
     showCursor: true, // Muestra el cursor de escritura
 });
 
+import Typed2 from 'typed.js';
+
+const typed2 = new Typed('#typed-text2', {
+strings: [
+      "Hola, soy Joseph Ordoñez.<br> Soy estudiante de Ingeniería en Sistemas.<br> Bienvenido a mi Portafolio personal."
+  ],
+  typeSpeed: 50,  // Velocidad de escritura
+  backSpeed: 25,  // Velocidad de borrado
+  startDelay: 500, // Retraso antes de empezar
+  backDelay: 2000, // Tiempo antes de borrar el texto
+  loop: true, // Hace que se repita infinitamente
+  showCursor: true, // Muestra el cursor de escritura
+});
+
 
 /// Define constants globally 
 window.HOME = 1; 
@@ -133,3 +147,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
