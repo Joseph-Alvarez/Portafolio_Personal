@@ -397,18 +397,29 @@ p {
   }
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   #contenido-1 {
       display: none !important;
   }
-}
+}*/
 
+@media (max-width: 768px) {
+  #contenido-1 {
+    display: flex;
+    position: relative;
+    width: 88%;
+    height: 70%;
+    top: -1250px;
+    left: -50px;
+  }
+}
 
 @media (max-width: 767px) {
   #perfil {
-    top: 27vh;
+    display: flex;
+    top: 38vh;
     width: 28vh;
-    left: 2%;
+    left: 11%;
   }
 
   #animation, .porta2, .container-fluid, #primer-contenido, .porta, #animation3, #animation4, #animation5, #animation6 {
@@ -425,21 +436,25 @@ p {
   .redes {
     font-size: 3.5vh;
     border-color: #0a0808;
-    left: 1vh;
+    left: 0vh;
   }
   .menu {
     position: relative;
-    width: 25vh;
+    width: 30vh;
     height: 30vh;
-    left: 45%;
+    left: 10%;
     top: -35vh;
+  }
+
+  .nav-item {
+    left: 6vh;
   }
 
   .porta {
     position: absolute;
     width: 90%;
     left: 2.5vh;
-    top: -20vh;
+    top: 10vh;
   }
 
   .porta_p {
@@ -456,24 +471,25 @@ p {
     top: 30vh;
   }
 
-#typed-text2 {
-  color: white;
-  width: 80%;  
-  font-size: 2vh;
-  font-weight: 600;
+#typed-text {
+  text-align: center;
+  color: #fff;
+  font-size: 2.1vh;
+  font-weight: 500;
   position: relative;
-  top: 15vh;
-  left: 5vh;
+  top: 30vh;
+  left: 6vh;
+  width: 80%;
 }
 
 
-  .card-text {
+  /*.card-text {
     position: relative;
     font-size: 20px;
     border-color: #000;
     font-weight: 700;
-    left: 6%;
-  }
+    left: 12%;
+  }*/
 
   .menu li {
     display: flex;
@@ -590,6 +606,7 @@ p {
 }
 
 
+
 @media (max-width: 767px) {
   .web {
     width: 20vh;
@@ -601,6 +618,108 @@ p {
     .porta {
         display: block !important;
     }
+
+    #contenido-2 {
+      position: relative;
+      width: 100%;
+      top: -85vh;
+      left: 22vh;
+      padding: 10px;
+      transform: translateX(-50%);
+    }
+
+    #contenido-3{
+      position: relative;
+      width: 70%;
+      height: 48%;
+      padding: 50px;
+      top: -100vh;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      grid-gap: 80px 120px; 
+      justify-content: center;
+      background-color: transparent;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+
+      #contenido-5, #contenido-4 {
+        display: flex;
+        top: -100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        height: 30%;
+        gap: 15px; /* Espaciado entre elementos */
+      }
+    
+      .card2 {
+        width: 80%; /* Ajustar tamaño de las tarjetas */
+        max-width: 300px; /* Evita que se agranden demasiado */
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    
+      .web {
+        width: 100%; /* Ajustar las imágenes */
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .row, .row2, .row3, .row4 {
+        position: relative;
+        width: 22vh;
+        height: 20vh;
+        background-color: transparent;
+        border-radius: 1rem;
+        border-color: rgb(236, 232, 232);
+        padding-bottom: 5%;
+      }
+  
+
+      .row {
+        left: -4vh;
+        top: -24vh;
+      }
+      
+      .row2 {
+        left: 17vh;
+        top: -47vh;
+      }
+      
+      .row3 {
+        left: -4vh;
+        top: -50vh;
+      }
+      
+      .row4 {
+        left: 17vh;
+        top: -73vh;
+      }
+    
+      .row5 {
+        left: -5vh;
+        top: -25vh;
+      }
+      
+      .row6 {
+        left: 18vh;
+        top: -46vh;
+      }
+      
+      .row7 {
+        left: -5vh;
+        top: -38vh;
+      }
+      
+      .row8 {
+        left: 18vh;
+        top: -48vh;
+      }
   }
 
 
+ 
+  
