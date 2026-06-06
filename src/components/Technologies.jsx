@@ -1,19 +1,19 @@
 import React, { useEffect, useRef } from 'react';
 
 const TECH_DATA = [
-    { src: '/public/img/CSharp.svg', alt: 'C#', level: 74, category: 'Lenguajes' },
-    { src: '/public/img/java.svg', alt: 'Java', level: 74, category: 'Lenguajes' },
-    { src: '/public/img/javascript.svg', alt: 'JavaScript', level: 74, category: 'Lenguajes' },
-    { src: '/public/img/html.svg', alt: 'HTML5', level: 90, category: 'Frontend' },
-    { src: '/public/img/css3.svg', alt: 'CSS', level: 85, category: 'Frontend' },
-    { src: '/public/img/react2.svg', alt: 'React', level: 74, category: 'Frontend' },
-    { src: '/public/img/bootstrap.svg', alt: 'Bootstrap', level: 75, category: 'Frontend' },
-    { src: '/public/img/nodejs.svg', alt: 'Node.js', level: 70, category: 'Backend' },
-    { src: '/public/img/python.svg', alt: 'Python', level: 65, category: 'Backend' },
-    { src: '/public/img/net.svg', alt: '.NET', level: 60, category: 'Backend' },
-    { src: '/public/img/supabase.svg', alt: 'Supabase', level: 74, category: 'Base de Datos' },
-    { src: '/public/img/sql.svg', alt: 'SQL Server', level: 70, category: 'Base de Datos' },
-    { src: '/public/img/mysql.svg', alt: 'MySQL', level: 74, category: 'Base de Datos' },
+    { src: '/img/CSharp.svg', alt: 'C#', level: 74, category: 'Lenguajes' },
+    { src: '/img/java.svg', alt: 'Java', level: 74, category: 'Lenguajes' },
+    { src: '/img/javascript.svg', alt: 'JavaScript', level: 74, category: 'Lenguajes' },
+    { src: '/img/html.svg', alt: 'HTML5', level: 90, category: 'Frontend' },
+    { src: '/img/css3.svg', alt: 'CSS', level: 85, category: 'Frontend' },
+    { src: '/img/react2.svg', alt: 'React', level: 74, category: 'Frontend' },
+    { src: '/img/bootstrap.svg', alt: 'Bootstrap', level: 75, category: 'Frontend' },
+    { src: '/img/nodejs.svg', alt: 'Node.js', level: 70, category: 'Backend' },
+    { src: '/img/python.svg', alt: 'Python', level: 65, category: 'Backend' },
+    { src: '/img/net.svg', alt: '.NET', level: 60, category: 'Backend' },
+    { src: '/img/supabase.svg', alt: 'Supabase', level: 74, category: 'Base de Datos' },
+    { src: '/img/sql.svg', alt: 'SQL Server', level: 70, category: 'Base de Datos' },
+    { src: '/img/mysql.svg', alt: 'MySQL', level: 74, category: 'Base de Datos' },
 ];
 
 const LEVEL_LABEL = (n) => n >= 88 ? 'Experto' : n >= 75 ? 'Avanzado' : 'Intermedio';

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 const WEBAPP_CARDS = [
     {
-        src: '/public/img/Netflix.jpg',
+        src: '/img/Netflix.jpg',
         border: '#4bb95e',
         title: 'Netflix Clone',
         desc: 'Réplica visual de la interfaz de Netflix con diseño responsivo y componentes de cards.',
@@ -10,7 +10,7 @@ const WEBAPP_CARDS = [
         link: '#',
     },
     {
-        src: '/public/img/LUGO.jpg',
+        src: '/img/LUGO.jpg',
         border: '#ec1313',
         title: 'LUGO App',
         desc: 'Maquetación completa de una plataforma empresarial con navegación y layouts complejos.',
@@ -18,7 +18,7 @@ const WEBAPP_CARDS = [
         link: '#',
     },
     {
-        src: '/public/img/facebook.jpg',
+        src: '/img/facebook.jpg',
         border: '#ddf314',
         title: 'Facebook Clone',
         desc: 'Clon de la interfaz de Facebook con feed, sidebar y componentes de publicaciones.',
@@ -26,7 +26,7 @@ const WEBAPP_CARDS = [
         link: '#',
     },
     {
-        src: '/public/img/Play Store.jpg',
+        src: '/img/Play Store.jpg',
         border: '#2926ce',
         title: 'Play Store UI',
         desc: 'Réplica de Google Play Store con grid de apps, categorías y diseño responsivo.',
