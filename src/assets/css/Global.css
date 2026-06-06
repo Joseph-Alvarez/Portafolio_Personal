@@ -1,0 +1,402 @@
+/* =============================================
+   GLOBAL.CSS — Navbar, Redes, Partículas, Modo oscuro
+   ============================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: transparent;
+    background-position: center center;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+html {
+    -webkit-tap-highlight-color: #000;
+}
+
+/* ---- App Wrapper ---- */
+#app-wrapper {
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(91, 86, 86);
+}
+
+#app-wrapper.night-mode {
+    background-color: #11498a;
+}
+
+/* ---- Main content ---- */
+#main-content {
+    position: relative;
+    /* top: 40px; */
+    z-index: 1;
+    width: 100%;
+}
+
+/* ---- Particles.js ---- */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand {
+    flex-grow: 1;
+}
+
+button:hover::before,
+button:hover::after {
+    transform: scale(0)
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+/* UNA sola definición de container-fluid */
+.container-fluid {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: auto;
+    height: auto;
+    position: static;
+}
+
+.nav-item {
+    width: auto;
+    position: static;
+    font-size: 18px;
+}
+
+/* Botones del navbar */
+.navbar button,
+.nav-item.nav-link {
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
+    border-radius: 6px !important;
+    padding: 10px 24px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    background: transparent !important;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s, box-shadow 0.2s;
+    width: auto !important;
+    height: auto !important;
+    top: auto !important;
+}
+
+
+.navbar button:hover,
+.nav-item.nav-link:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+.navbar button.select-opt,
+.nav-item.nav-link.select-opt {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: #fff !important;
+}
+
+/* ---- Button global (fuera del navbar) ---- */
+button {
+    position: static;
+    top: auto;
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+}
+
+
+/* ---- Menú hamburguesa (solo móvil) ---- */
+.menu {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 35px;
+    color: #fff;
+    z-index: 999;
+}
+
+
+.porta_p {
+    display: none;
+}
+
+/* ---- Barra de redes sociales ---- */
+.nav2 {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    z-index: 100;
+    box-shadow: 0 0 5px rgba(231, 227, 227, 0.2);
+}
+
+.redes {
+    padding: 4px;
+    cursor: pointer;
+    font-size: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.redes:hover {
+    transform: scale(2);
+}
+
+/* ---- Modo oscuro toggle ---- */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #223243;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: #223243;
+    box-shadow: inset 2px -2px 0 1.8px #fff;
+    transition: .4s;
+    animation: anima1 0.3s linear;
+}
+
+@keyframes anima1 {
+    0% {
+        transform: translateX(1.5em);
+    }
+
+    80% {
+        transform: translateX(-0.3em);
+    }
+
+    100% {
+        transform: translateX(0em);
+    }
+}
+
+.switch input:checked+.slider:before {
+    background-color: yellow;
+    box-shadow: none;
+    transform: translateX(1.5em);
+    animation: anima 0.3s linear;
+}
+
+@keyframes anima {
+    0% {
+        transform: translateX(0px);
+    }
+
+    80% {
+        transform: translateX(1.6em);
+    }
+
+    100% {
+        transform: translateX(1.4em);
+    }
+}
+
+/* ---- Headings globales ---- */
+h4 {
+    color: #ffffff;
+}
+
+/* ---- Stats particles ---- */
+.count-particles {
+    background: #4f4fa1;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #59a7a7;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+/* ══════════════════════════════════════
+   TABLET  768–1024px
+══════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar button,
+    .nav-item.nav-link {
+        padding: 8px 16px !important;
+        font-size: 15px !important;
+    }
+}
+
+/* ══════════════════════════════════════
+   MÓVIL  < 768px
+══════════════════════════════════════ */
+@media (max-width: 767px) {
+
+    .menu,
+    .porta_p {
+        display: block;
+    }
+
+    .menu {
+        position: relative;
+        width: 30vw;
+        height: 30vw;
+        left: 10%;
+        top: -35vw;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .menu li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        transition: background-color 0.2s;
+    }
+
+    .nav2 {
+        position: fixed;
+        top: 2vh;
+        left: 0;
+        bottom: auto;
+    }
+
+    .redes {
+        font-size: 3.5vh;
+        margin: 0 5px;
+    }
+
+    .switch {
+        position: relative;
+        left: -350px;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .navbar button,
+    .nav-item.nav-link {
+        padding: 8px 14px !important;
+        font-size: 14px !important;
+    }
+
+    h1 {
+        color: rgb(196, 195, 195);
+        font-weight: 600;
+    }
+
+    h2 {
+        color: rgb(243, 239, 239);
+        font-weight: 600;
+    }
+}

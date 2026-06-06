@@ -1,0 +1,54 @@
+import React, { useEffect, useRef } from 'react';
+
+const PROJECT_CARDS = [
+    { src: '/public/img/Proyecto_1.jpg', border: '#4bb95e' },
+    { src: '/public/img/Proyecto_2.jpg', border: '#ec1313' },
+    { src: '/public/img/Proyecto_3.png', border: '#ddf314' },
+    { src: '/public/img/5.png', border: '#2926ce' },
+];
+
+const rowClasses = ['row', 'row2', 'row3', 'row4'];
+
+const Projects = () => {
+    const animationRef = useRef(null);
+
+    useEffect(() => {
+        if (animationRef.current && window.bodymovin) {
+            const anim = window.bodymovin.loadAnimation({
+                container: animationRef.current,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: '/data/Project_4.json',
+            });
+            return () => anim.destroy();
+        }
+    }, []);
+
+    return (
+        <div id="contenido-4">
+            {/* IZQUIERDA: animación */}
+            <div className="animation-side">
+                <div ref={animationRef} id="animation5" />
+            </div>
+
+            {/* DERECHA: grid de cards */}
+            <div className="cards-side2">
+                {PROJECT_CARDS.map(({ src, border }, i) => (
+                    <div key={i} className="card2">
+                        <div className="card-body">
+                            <img
+                                className="web2"
+                                src={src}
+                                alt={`Proyecto ${i + 1}`}
+                                style={{ border: `2px solid ${border}` }}
+                            />
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default Projects;

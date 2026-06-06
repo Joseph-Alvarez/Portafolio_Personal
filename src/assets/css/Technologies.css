@@ -1,0 +1,174 @@
+/* ── Technologies Section ─────────────────────────────── */
+
+#contenido-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 40px 80px;
+}
+
+/* ── Lottie side ───────────────────────────────────────── */
+.animation-side6 {
+    flex: 0 0 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#animation3 {
+    width: 300px;
+    max-width: 100%;
+}
+
+/* ── Right panel ───────────────────────────────────────── */
+.tech-panel {
+    flex: 1;
+    min-width: 0;
+}
+
+.tech-intro {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0 0 28px;
+    letter-spacing: 0.02em;
+}
+
+/* ── Category block ────────────────────────────────────── */
+.tech-category {
+    margin-bottom: 28px;
+}
+
+.tech-category-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 12px;
+    padding-left: 2px;
+}
+
+/* ── Grid of cards ─────────────────────────────────────── */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+}
+
+/* ── Individual card ───────────────────────────────────── */
+.tech-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 10px 12px;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    cursor: default;
+}
+
+.tech-card:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.22);
+    transform: translateY(-2px);
+}
+
+/* ── Logo ──────────────────────────────────────────────── */
+.tech-logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* ── Text + bar ────────────────────────────────────────── */
+.tech-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tech-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.88);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tech-bar-bg {
+    height: 3px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.tech-bar {
+    height: 100%;
+    width: var(--bar-width, 0%);
+    background: linear-gradient(90deg, #7c6fee, #a78bfa);
+    border-radius: 4px;
+    animation: barGrow 0.8s ease forwards;
+}
+
+@keyframes barGrow {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--bar-width);
+    }
+}
+
+.tech-level {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+/* ── Tablet ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+    #contenido-2 {
+        padding: 40px 30px 60px;
+        gap: 30px;
+    }
+
+    .animation-side {
+        flex: 0 0 240px;
+    }
+
+    #animation3 {
+        width: 240px;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+}
+
+/* ── Móvil ─────────────────────────────────────────────── */
+@media (max-width: 767px) {
+    #contenido-2 {
+        flex-direction: column;
+        padding: 40px 20px 60px;
+        gap: 24px;
+    }
+
+    .animation-side,
+    #animation3 {
+        display: none;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
