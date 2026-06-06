@@ -66,7 +66,7 @@ const Navbar = ({ activeView, setActiveView }) => {
                             {label}
                         </button>
                     ))}
-                    <button onClick={() => setActiveView(VIEWS.CONTACT)} className="mobile-cta">
+                    <button onClick={() => { setActiveView(VIEWS.CONTACT); setMenuOpen(false); }} className="mobile-cta">
                         Contáctame
                     </button>
                 </div>
