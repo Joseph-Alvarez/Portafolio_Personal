@@ -228,11 +228,11 @@
 @media (max-width: 767px) {
     #contenido-3 {
         flex-direction: column;
-        padding: 50px 20px 60px;
+        padding: 80px 20px 60px;
         gap: 24px;
     }
 
-    .animation-side,
+    .animation-side3,
     #animation4 {
         display: none;
     }
