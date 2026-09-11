@@ -80,7 +80,7 @@ const Home = ({ setActiveView }) => {
                         >
                             Ver proyectos
                         </button>
-                        <a href="/cv/Hoja_de_Vida.pdf" download className="btn-cta btn-secondary-cta">
+                        <a href="/cv/Joseph_Ordoñez_CV.pdf" download className="btn-cta btn-secondary-cta">
                             Descargar CV
                         </a>
                     </div>
